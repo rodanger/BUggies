@@ -1,0 +1,29 @@
+body{
+
+    font-family: 'Baloo 2', cursive;
+    
+}
+
+.gallery{
+
+    margin: 80px 50px ;
+    
+}
+
+.gallery img{
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+    border-radius: 15px;
+
+}
+
+.gallery img:hover{
+    filter:grayscale(0);
+    transform: scale(1.1);
+    
+}
+
+
+

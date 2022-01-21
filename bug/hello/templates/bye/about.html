@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE>
+
+<html>
+  <body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Buggys</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"> 
+
+    
+
+<!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/bg.css' %}">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          background-image: url('/bugg.png');
+        }
+      }
+    </style>
+  
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'index' %}">Comatillo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'about' %}">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'gallery' %}">Gallery</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
+              </li>-->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <br><br><br><br><br>
+
+
+    <!----->
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Paquetes</h1>
+      <p class="fs-5 text-muted">Contamos con una serie de paquetes de diversos precios para elijas el que mas se acomode a ti </div>
+    <!----->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Regular</h4>
+        </div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">$950<small class="text-muted fw-light">/rd</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>Rutas preestablecidas</li>
+                <li>Almuerzo</li>
+                <li>Escursion en la loma</li>
+                <li>Area recreativa</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send?phone=18498552291&text=Saludos...%20%0A%0AEspero%20y%20est%C3%A9n%20teniendo%20excelente%20momento.%20%0A%0AMe%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20general%20concerniente%20a%20lo%20que%20como%20empresa%20ofrecen%20(tour%2C%20precios%2C%20comidas%20y%20reservaci%C3%B3n).%0A%0AGracias%20de%20antemano.%20" button type="button" class="w-100 btn btn-lg btn-primary">Get started</a></button>
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Standard</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$1600<small class="text-muted fw-light">/rd</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Escursion en la loma</li>
+            <li>Salto alto</li>
+            <li>Paseo por la cueva</li>
+            <li>Almuerzo</li>
+          </ul>
+          <a href="https://api.whatsapp.com/send?phone=18498552291&text=Saludos...%20%0A%0AEspero%20y%20est%C3%A9n%20teniendo%20excelente%20momento.%20%0A%0AMe%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20general%20concerniente%20a%20lo%20que%20como%20empresa%20ofrecen%20(tour%2C%20precios%2C%20comidas%20y%20reservaci%C3%B3n).%0A%0AGracias%20de%20antemano.%20" button type="button" class="w-100 btn btn-lg btn-primary">Get started</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-white bg-primary border-primary">
+          <h4 class="my-0 fw-normal">Extremo</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$2200<small class="text-muted fw-light">/rd</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Rutas Extremas</li>
+            <li>Kayak</li>
+            <li>Carrera de buggies</li>
+            <li>Parrillada</li>
+          </ul>
+          <a href="https://api.whatsapp.com/send?phone=18498552291&text=Saludos...%20%0A%0AEspero%20y%20est%C3%A9n%20teniendo%20excelente%20momento.%20%0A%0AMe%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20general%20concerniente%20a%20lo%20que%20como%20empresa%20ofrecen%20(tour%2C%20precios%2C%20comidas%20y%20reservaci%C3%B3n).%0A%0AGracias%20de%20antemano.%20" button type="button" class="w-100 btn btn-lg btn-primary">Contact us</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
